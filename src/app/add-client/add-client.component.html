@@ -1,0 +1,36 @@
+
+<h1 name="h1">{{message}}</h1>
+<h1>Create a Client</h1>
+<h2>Please fill in this form to create a client </h2>
+<div>
+    <label for="name" >Name </label>
+    <input name="name" #n="ngModel" id="name" type="text" required minlingth="5" [(ngModel)]="name"/>
+    <span *ngIf="n.touched && n.invalid" >Name is invalid</span>
+</div><br>
+<div>
+    <label for="email">Email </label>
+    <input name="email" #em="ngModel" id="email" type="email" ngModel required email="" [(ngModel)]="email"/>
+    <span *ngIf="em.touched && em.invalid" >Email is invalid</span>
+</div><br>
+
+
+<div>
+    <label for="address">Address </label>
+    <input name="address" id="address" type="text" required minlingth="8" [(ngModel)]="address"/>
+    
+</div><br>
+<div>
+    <label for="password">Password </label>
+    <input name="password" id="password" type="password" [(ngModel)]="password"/>
+    
+</div><br>
+
+<div>
+    <label for="password">Repeat Password </label>
+    <input name="password"  id="password" type="password" [(ngModel)]="password"/>
+    
+</div><br>
+<div>
+<button name="Register" class="button" id="Register" type="button" (click)="addClient()">Register</button><br>
+
+</div>
