@@ -1,0 +1,24 @@
+
+{{message}}
+<h1>View Ordered Records </h1>
+<table border="1">
+<tr>
+
+<th>Name</th>
+<th>Email</th>
+<th>Address</th>
+<!-- <th>Password</th> -->
+<th>Edit</th>
+<th>Delete</th>
+</tr>
+<tr *ngFor="let Client of clients">
+   
+    <td>{{Client.name}}</td>
+    <td>{{Client.email}}</td>
+    <td>{{Client.address}}</td>
+    <td><button type="button" routerLink="/edit/{client.id}">Edit</button></td>
+    <td><button type="button" (click)="deleteClient(Client.id)">Delete</button></td>
+
+
+</tr>
+</table>

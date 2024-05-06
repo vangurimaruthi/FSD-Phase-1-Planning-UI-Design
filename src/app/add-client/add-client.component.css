@@ -1,0 +1,36 @@
+div {
+    text-align: center;
+    font-family: serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+h1 {
+    color: #710628;
+    text-align: center;
+}
+h2 {
+    color: #710628;
+}
+
+.button {
+    background-color: #c7617a; 
+    border: none; /* No borders */
+    color: white; /* White text */
+    padding: 5px 15px; /* Top and bottom padding of 15px, left and right padding of 32px */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: flexbox; /* Inline block element */
+    font-size: 12px; /* Text size */
+    margin: 2px 2px; /* Margin around the button */
+    cursor: pointer; /* Pointer/hand icon when hovered over */
+    border-radius: 20px; /* Rounded corners */
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  span {
+    color:red;
+  }

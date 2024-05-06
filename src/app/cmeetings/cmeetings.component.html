@@ -1,0 +1,32 @@
+
+
+
+<h1>{{message}}</h1>
+<h1>Create a Meeting Schedule</h1>
+
+
+
+<div id="meetingtopic">
+    <label for="topic">Meeting Topic </label>
+    <input id="topic"  placeholder="Enter Meeting Topic" type="text" [(ngModel)]="meetingtopic"/>
+</div><br>
+
+<div id="noofppl">
+    <label for="nopeople">Number of People </label>
+    <input id="nopeople" placeholder="Enter number of People" type="number" [(ngModel)]="noofppl"/>
+    </div><br>
+
+    <div>
+        <label for="date">Meeting Date : </label>
+        <input id="date" type="date" [(ngModel)]="mdate"/>
+    </div><br>
+    
+
+<div id="startime">
+    <label for="stime">Start Time </label>
+    <input id="stime" placeholder="Select Time " type="date" type="time" [(ngModel)]="mdate" [(ngModel)]="startime"/>
+</div><br>
+<div>
+<button class="button" id="addmeeting" type="button" (click)="addMeeting()">Add Meeting</button><br>
+</div>
+<br>
